@@ -1,0 +1,79 @@
+.timer-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1b1035, #39205c, #24133f);
+}
+
+.timer-card {
+  background: #2d1c49;
+  padding: 45px;
+  border: 1px solid #b99545;
+  border-radius: 20px;
+  text-align: center;
+  width: 370px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.timer-card h1 {
+  color: #f5d783;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: #d5c5e8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.timer-display {
+  font-size: 65px;
+  font-weight: bold;
+  color: #f5d783;
+  margin: 30px 0;
+  text-shadow: 0 0 15px rgba(245, 215, 131, 0.2);
+}
+
+.timer-display span {
+  font-size: 17px;
+  color: #d5c5e8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-container button {
+  padding: 11px 18px;
+  border: 1px solid #f5d783;
+  border-radius: 8px;
+  background: #f5d783;
+  color: #2d1c49;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.button-container button:hover:not(:disabled) {
+  background: #ffe9a8;
+  transform: translateY(-2px);
+}
+
+.button-container button:disabled {
+  background: #725d83;
+  border-color: #725d83;
+  color: #c9bad5;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 28px;
+  color: #d5c5e8;
+  font-size: 14px;
+}
